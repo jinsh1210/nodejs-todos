@@ -25,10 +25,12 @@ app.use(
 const indexRouter = require("./routes/index");
 const todosRouter = require("./routes/todos");
 const adminRouter = require("./routes/admin");
+const testRouter = require("./routes/test");
 
 app.use("/", indexRouter);
 app.use("/todos", todosRouter);
 app.use("/admin", adminRouter);
+app.use("/test", testRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
